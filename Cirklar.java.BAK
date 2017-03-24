@@ -1,0 +1,52 @@
+// Rita cirklar
+import java.awt.*;
+import javax.swing.*;
+
+
+public class Cirklar extends JPanel {
+    private int r Ã ¶d;
+    private int gr Ã ¶n;
+    private int bl Ã ¥;
+
+    public Cirklar(int r, int g, int b){
+        r Ã ¶d = r;
+        gr Ã ¶n = g;
+        bl Ã ¥= b;
+        setBackground(Color.white);
+        setPreferredSize(new Dimension(350, 450));
+    }
+
+    public void paintComponent(Graphics gf) {
+        super.paintComponent(gf);
+        Color r = new Color(r Ã ¶d, 0, 0);
+        Color g = new Color(0, gr Ã ¶n, 0);
+        Color b = new Color(0, 0, bl Ã ¥);
+
+        Color vit = new Color(255, 255, 255);
+         gf.setColor(r);
+         gf.fillOval(135, 120, 80, 80);
+         gf.setColor(g);
+         gf.fillOval(225, 170, 80, 80);
+         gf.setColor(b);
+         gf.fillOval(225, 270, 80, 80);
+        Color rg = new Color(r Ã ¶d, gr Ã ¶n, 0);
+         gf.setColor(rg);
+         gf.fillOval(135, 320, 80, 80);
+        Color rb = new Color(r Ã ¶d, 0, bl Ã ¥);
+         gf.setColor(rb);
+         gf.fillOval(45, 270, 80, 80);
+        Color gb = new Color(0, gr Ã ¶n, bl Ã ¥);
+         gf.setColor(gb);
+         gf.fillOval(45, 170, 80, 80);
+        Color rgb = new Color(r Ã ¶d, gr Ã ¶n, bl Ã ¥);
+         gf.setColor(rgb);
+         gf.fillOval(135, 220, 80, 80);
+         gf.setColor(r);
+         gf.fillOval(135, 220, 80, 80);
+
+
+    }
+
+
+
+}
