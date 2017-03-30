@@ -21,7 +21,8 @@ public class Cirklar extends JPanel{
         Color r = new Color(röd,0,0);
         Color g = new Color(0,grön,0);
         Color b = new Color(0,0,blå);
-       Color vit = new Color(255,255,255);
+        Color vit = new Color(255,255,255);
+        Color gray = new Color(125,125,125);
        
         gf.setColor(r);
         gf.fillOval(135,120,80,80);
@@ -41,7 +42,7 @@ public class Cirklar extends JPanel{
         Color rgb = new Color(röd,grön,blå);
         gf.setColor(rgb);
         gf.fillOval(135,220,80,80);
-        gf.setColor(vit);
+        gf.setColor(gray);
         gf.fillOval(135,220,80,80);
         
         

@@ -2,7 +2,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
 public class Keyboard{
     
     public static char readChar(){
@@ -16,6 +15,6 @@ public class Keyboard{
             System.err.println("Caught IOException: " + e.getMessage());
         }
      
-            return (char)ascii;  //Cast an integer to character
+        return (char)ascii;  //Cast an integer to character
     }
 }

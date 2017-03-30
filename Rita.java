@@ -11,7 +11,7 @@ public class Rita extends JFrame{
         p.setBackground(Color.white);
         
         
-        Cirklar c = new Cirklar(250,250,250);
+        Cirklar c = new Cirklar(220,220,220);
         
         
         getContentPane().add(p,"North");
