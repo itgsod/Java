@@ -1,20 +1,30 @@
 import java.awt.*;
+import java.awt.geom.*;
+import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
 
 
 public class ExoJSlider extends JFrame {
     private JSlider slider1,slider2;
-    private JLabel l1,l2;
-    private int val1,val2;
+    private JLabel l1,l2,l3;
+    private int val1=100,val2=100,val3;
 
     public ExoJSlider(){
         JPanel p1 = new JPanel();
         JPanel p2 = new JPanel();
-        getContentPane().add(p1,"North");
+        JPanel p3 = new JPanel();
+        //JPanel p4 = new JPanel();
+        CirkelnExo65 c1 = new CirkelnExo65(val1,val2);
+        
+        getContentPane().add(p3,"North");
         getContentPane().add(p2,"Center");
-        l1 = new JLabel();
-        l2 = new JLabel();
+        getContentPane().add(p1,"South");
+        //getContentPane().add(p4,"West");
+        
+        //l1 = new JLabel();
+        //l2 = new JLabel();
+        //l3 = new JLabel();
        
         
        //First slider
@@ -24,9 +34,6 @@ public class ExoJSlider extends JFrame {
         slider1.setPaintTicks(true); 
         slider1.setPaintLabels(true);       
             
-        //getContentPane().add(slider1,"North");
-        //getContentPane().add(l1,"South");
-        
         //Second slider
         slider2 = new JSlider(JSlider.HORIZONTAL,0,100,0);
         slider2.setMinorTickSpacing(5);
@@ -35,25 +42,31 @@ public class ExoJSlider extends JFrame {
         slider2.setPaintLabels(true);    
         
         //Third slider
-        
-        
-           
+        //slider3 = new JSlider(JSlider.HORIZONTAL,-10,10,0);
+        //slider3.setMinorTickSpacing(1);
+        //slider3.setMajorTickSpacing(5); 
+        //slider3.setPaintTicks(true); 
+        //slider3.setPaintLabels(true);    
+  
         
         p1.setLayout(new GridLayout(2,1));
-       
+        
         p1.add(slider1);
         p1.add(slider2);
-        p2.setLayout(new GridLayout(1,2));
-        p2.add(l1);
-        p2.add(l2);    
+        p2.setLayout(new GridLayout(1,1));
+        p2.add(c1);
         
-        //getContentPane().add(slider2,"Center");
-        //getContentPane().add(l2,"East");
+        //p1.add(slider3);
+        //p4.setLayout(new GridLayout(2,1));
+        //p4.add(l1);
+        //p4.add(l2);
+        //p4.add(l3);    
         
         Lyssnare minlys = new Lyssnare();
         
         slider1.addChangeListener(minlys);
         slider2.addChangeListener(minlys);
+        //slider3.addChangeListener(minlys);
         
         pack();
         
@@ -70,11 +83,10 @@ public class ExoJSlider extends JFrame {
             }else if(e.getSource() == slider2){
                 val2 = slider2.getValue();
                 l2.setText(Integer.toString(val2));
-                
-            }
-    
-        }
-        
-    }
-}
 
+            }
+        
+        }
+    }
+
+}

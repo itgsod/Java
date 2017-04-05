@@ -4,5 +4,4 @@ public class Exo65{
         wind.setVisible(true);
         
     }
-    
 }
