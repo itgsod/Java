@@ -3,42 +3,20 @@ import java.awt.geom.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
-import java.awt.geom.Ellipse2D;
 
 @SuppressWarnings("serial")
-
-public class DrawPanel extends JPanel {
-
-    private void doDrawing(Graphics g) {
-
-        Graphics2D g2d = (Graphics2D) g;
-
-         g2d.setColor(Color.blue);
-
-        g2d.setColor(Color.GREEN);
-        Ellipse2D circle = getCircleByCenter(100,100,100,100);
-    }
-
-    public void paintComponent(Graphics g) {
-
-        super.paintComponent(g);
-        doDrawing(g);
-    }
-}
-
 public class ExoJSlider extends JFrame {
     private JSlider slider1,slider2,slider3;
     private JLabel l1,l2,l3;
     private float val1=100.0f,val2=100.0f,val3;
-    private CirkelnMov c1;
-    
+
     public ExoJSlider(){
         JPanel p1 = new JPanel();
         //JPanel p2 = new JPanel();
         JPanel p3 = new JPanel();
         JPanel p4 = new JPanel();
         
-        c1 = new CirkelnMov((float)val1,(float)val2);
+        CirkelnMov c1 = new CirkelnMov((float)val1,(float)val2);
         
         getContentPane().add(p3,"North");
         getContentPane().add(p1,"South");
@@ -92,8 +70,8 @@ public class ExoJSlider extends JFrame {
         //slider3.addChangeListener(minlys);
         
         pack();
-       
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
     
     // Lyssnare klassen
@@ -102,35 +80,14 @@ public class ExoJSlider extends JFrame {
          
             if (e.getSource() == slider1){
                 val1 = (float)slider1.getValue();
-                l1.setText(Float.toString(val1));
+                l1.setText(val1);
             }else if(e.getSource() == slider2){
                 val2 = (float)slider2.getValue();
-                //l2.setText(Float.toString(val2));
+                //l2.setText(Integer.toString(val2));
 
             }
         
         }
-    }
-    
-    
-    
-    
-    public void paint() {
-        Graphics2D g = graphicsContext.createGraphics();
-        Point2D largeCircleCenter = new Point2D.Double((double)100.0, (double)100.0);
-        double largeCircleRadius = (double)100.0;
-        Ellipse2D c1 = getCircleByCenter(largeCircleCenter, largeCircleRadius);
-
-        g.setColor(Color.GREEN);
-  
-        g.fill(c1);
-        g.draw(c1);
-        
-        g.dispose();
-        
-        //contextRender.repaint();
-        
-
     }
 
 }
