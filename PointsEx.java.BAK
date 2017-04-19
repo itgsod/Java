@@ -1,9 +1,9 @@
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.EventQueue;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Insets;
+/*
+ * import java.awt.Color; import java.awt.Dimension; import
+ * java.awt.EventQueue; import java.awt.Graphics; import java.awt.Graphics2D;
+ * import java.awt.Insets;
+ */
+import java.awt.*;
 import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -16,7 +16,7 @@ class DrawPanel extends JPanel {
 
          g2d.setColor(Color.blue);
 
-        for (int i = 0; i <= 100000; i++) {
+        for (int i = 0; i <= 100; i++) {
 
             Dimension size = getSize();
             Insets insets = getInsets();
@@ -58,9 +58,8 @@ public class PointsEx extends JFrame {
 
     public static void main(String[] args) {
 
-        EventQueue.invokeLater(()->{
-            PointsEx ex = new PointsEx();
-             ex.setVisible(true);
-        });
+        PointsEx ex = new PointsEx();
+         ex.setVisible(true);
+
     }
 }

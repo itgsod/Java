@@ -16,7 +16,7 @@ class DrawPanel extends JPanel {
 
          g2d.setColor(Color.blue);
 
-        for (int i = 0; i <= 1000; i++) {
+        for (int i = 0; i <= 10000; i++) {
 
             Dimension size = getSize();
             Insets insets = getInsets();

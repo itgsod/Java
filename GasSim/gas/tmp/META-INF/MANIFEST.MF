@@ -1,0 +1,56 @@
+Manifest-Version: 1.0
+Application-Name: Gas
+Permissions: sandbox
+Created-By: 1.7.0_21 (Oracle Corporation)
+
+Name: Gas$Setup3Equal.class
+SHA-256-Digest: Otutpl/TBmW0/KSrxAqC3Y+2vHO/x2PeJCRNJya0L20=
+
+Name: HistogramCanvas.class
+SHA-256-Digest: aXJt/oTZei0A7GBiG0nXT8COiR4IpSiXwdF1By2zYCg=
+
+Name: Gas$Setup2Equal.class
+SHA-256-Digest: ZldWu6ZRHTDuVhM0txoa/OAOCrdRTYN6br5/fqYy3Wg=
+
+Name: Gas$SetupBrownian.class
+SHA-256-Digest: 71/aKsbf6+M0hHJqte6IvkWlMXvQkaJEs532UOJXey0=
+
+Name: Gas.class
+SHA-256-Digest: HCnDK9cEx+kktCozZMU5tnIjDEfEjlQHDsWKBkWfuoE=
+
+Name: Gas$Setup1Single.class
+SHA-256-Digest: 2OPiRQLVM0X7TrF8nT8NyrsKZVHXR2BUnIEIOwbHZc4=
+
+Name: Gas$Setup3Random.class
+SHA-256-Digest: BT9rngJlzmZnxpy/qrwdo72liKndgeFB+xgiNBXOaVs=
+
+Name: GasCanvas.class
+SHA-256-Digest: oXhUWu0IhNCwfmajUjSFnR58DB9pVz/2OUzs+rSm2Hs=
+
+Name: Gas$Molecule.class
+SHA-256-Digest: gyjzn2+CWgFKl01o7UL/KbI/5RSFG8w+PunxWPTHzR4=
+
+Name: Gas$SetupExpansion.class
+SHA-256-Digest: UFce2PqTKQso74nnzdM6R9i6sNEDJgxDl72+tMbia6o=
+
+Name: Gas$Setup1Random.class
+SHA-256-Digest: OsBrQVKwIawQxraR/Jc1fefW4PiY+uB49v/rfhgo6VU=
+
+Name: Gas$Setup1Small.class
+SHA-256-Digest: 3p8G2SpGiEOhvo1s/Zlf9K2TGGN25laK2Xl0RXaTK1k=
+
+Name: Gas$Setup1Equal.class
+SHA-256-Digest: Ta5qnM9e2wF8DZnfkh894loPHUjRf6SwCbVjmQnD3Jo=
+
+Name: Gas$Setup1Extreme.class
+SHA-256-Digest: JGW1xnh3QXP+jfbLL8moY9FXi0qIUlbNlFiyhOpF10k=
+
+Name: Gas$Setup2Random.class
+SHA-256-Digest: eKivElIbVHG/FYKIxm4Ft22siZYZxwhVl3YWXz806IE=
+
+Name: Gas$Setup.class
+SHA-256-Digest: +54uLdVFlXqQ6iH3nzUgxaUBpnUNt3rHHl7d/FC5OfM=
+
+Name: GasLayout.class
+SHA-256-Digest: jlcShfw3ZIOiaM/E1/v3096dfcB5dcwHjMwn7IHuwK4=
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>Dispersion Examples: Normal Dispersion</title>
+<link rel="SHORTCUT ICON" href="favicon.ico">
+<body>
+<head>
+
+<script type="text/javascript" src="../swingjs/jquery/jquery.js"></script>
+<script type="text/javascript" src="../swingjs/js/j2sJQueryExt.js"></script>
+
+<script type="text/javascript" src="../swingjs/js/j2sApplet.js"></script>
+<script type="text/javascript" src="../swingjs/js/j2sSwingJS.js"></script>
+<script type="text/javascript" src="../swingjs/js/SJSApplet.js"></script>
+
+<script type="text/javascript">
+
+////J2S._checkLoad = true;
+
+J2S._isAsync = false;
+
+J2S.getProfile() // records repeat calls to overridden or overloaded Java methods
+
+// use ?_USE=JAVA or _USE=SIGNED or _USE=HTML5
+
+var app ;
+
+jmol_isReady = function(applet) {
+	J2S._getElement(applet, "appletdiv").style.border="1px solid blue"
+	app = applet; 
+}		
+
+Info = {
+    code: "com.falstad.Dispersion",
+	width: 800,
+	height: 400,
+	debug: false,
+	color: "#F0F0F0",
+	zIndexBase: 20000,
+	z:{monitorZIndex:100},
+	serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
+	use: "HTML5",
+	j2sPath: "../swingjs/j2s",
+	jarPath: "../swingjs/java",
+//	jarFile: "JStest.jar",
+	isSigned: false,
+	disableJ2SLoadMonitor: false,
+	disableInitialConsole: false,
+        useFrame:"false",
+	readyFunction: jmol_isReady,
+        allowjavascript: true,
+	freq1:30,
+	freq2:200,
+	speed1:100,
+	speed2:30
+}
+
+SwingJS.getApplet("Dispersion", Info)
+</script>
+
+</head>    
+
+
+<body>
+<applet code=PointsEx.class archive=DemoPoint.jar width=800 height=640>
+Sorry, you need a Java-enabled browser to see the simulation.
+<param name=pause value=20>
+<param name="permissions" value="sandbox">
+</applet>
+
+</body>
+</html>

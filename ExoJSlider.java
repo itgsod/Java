@@ -1,22 +1,24 @@
 import java.awt.*;
-import java.awt.geom.*;
+import java.awt.geom.Ellipse2D;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
-import java.awt.geom.Ellipse2D;
+//import java.awt.geom.Ellipse2D;
 
 @SuppressWarnings("serial")
 
-public class DrawPanel extends JPanel {
+class DrawPanel extends JPanel {
 
     private void doDrawing(Graphics g) {
 
-        Graphics2D g2d = (Graphics2D) g;
+        Graphics2D g2d = (Graphics2D)g;
 
-         g2d.setColor(Color.blue);
+        g2d.setColor(Color.blue);
 
         g2d.setColor(Color.GREEN);
-        Ellipse2D circle = getCircleByCenter(100,100,100,100);
+        
+        //Ellipse2D circle = getCircleByCenter(100,100,100,100);
+        Shape c1 = Ellipse2D.Float(100.0f,100.0f,100.0f,100.0f);
     }
 
     public void paintComponent(Graphics g) {
