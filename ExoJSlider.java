@@ -18,7 +18,7 @@ class DrawPanel extends JPanel {
         g2d.setColor(Color.GREEN);
         
         //Ellipse2D circle = getCircleByCenter(100,100,100,100);
-        Shape c1 = Ellipse2D.Float(100.0f,100.0f,100.0f,100.0f);
+        //Shape c1 = Ellipse2D.Float(100.0f,100.0f,100.0f,100.0f);
     }
 
     public void paintComponent(Graphics g) {
@@ -40,7 +40,7 @@ public class ExoJSlider extends JFrame {
         JPanel p3 = new JPanel();
         JPanel p4 = new JPanel();
         
-        c1 = new CirkelnMov((float)val1,(float)val2);
+        //c1 = new CirkelnMov((float)val1,(float)val2);
         
         getContentPane().add(p3,"North");
         getContentPane().add(p1,"South");
@@ -119,9 +119,9 @@ public class ExoJSlider extends JFrame {
     
     public void paint() {
         Graphics2D g = graphicsContext.createGraphics();
-        Point2D largeCircleCenter = new Point2D.Double((double)100.0, (double)100.0);
-        double largeCircleRadius = (double)100.0;
-        Ellipse2D c1 = getCircleByCenter(largeCircleCenter, largeCircleRadius);
+        //Point2D largeCircleCenter = new Point2D.Double((double)100.0, (double)100.0);
+        //double largeCircleRadius = (double)100.0;
+        //Ellipse2D c1 = getCircleByCenter(largeCircleCenter, largeCircleRadius);
 
         g.setColor(Color.GREEN);
   

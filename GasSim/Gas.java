@@ -340,10 +340,10 @@ public class Gas extends Applet
 		if (n == 2) {
 		    m.r *= 3;
 		    m.mass *= 9; // was 27
-		} else if (n == 1) {
+		 }else if(n == 1){
 		    m.r *= 2;
 		    m.mass *= 4; // was 8
-		}
+         }
 	    }
 	    setColor(m);
 	}

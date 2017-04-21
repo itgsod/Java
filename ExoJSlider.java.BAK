@@ -3,8 +3,11 @@ import java.awt.geom.*;
 import java.awt.event.*;
 import javax.swing.*;
 import javax.swing.event.*;
+import java.util.Random;
 
 @SuppressWarnings("serial")
+
+
 public class ExoJSlider extends JFrame {
     private JSlider slider1,slider2,slider3;
     private JLabel l1,l2,l3;
