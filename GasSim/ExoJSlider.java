@@ -12,7 +12,7 @@ public class ExoJSlider extends JFrame {
     private JPanel p1,p2,p3,p4;
     private DrawPanel dpnl;
     private JLabel l1,l2,l3;
-    private int val1=50000,val2=100;
+    private int val1=2000,val2=100;
     private Molecule mols[];
     
     
@@ -64,8 +64,8 @@ public class ExoJSlider extends JFrame {
         //p3.setLayout(new GridLayout(1,1));
         //p3.add(l1);
         p4.setLayout(new GridLayout(1,1));
+        
         dpnl = new DrawPanel();
-
         p4.add(dpnl);
 
         //p4.add(c1);
@@ -139,12 +139,12 @@ public class ExoJSlider extends JFrame {
             int y = Math.abs(r.nextInt()) % h;
             //g2d.drawLine(x, y, x, y);
             //g2d.Ellipse2D.Float((float)x,(float)y,5.0,5.0);
-            Molecule m = new Molecule();
-            m.x = (float)x;
-            m.y = (float)y;
-            mols[i] = m;
+            //Molecule m = new Molecule();
+            //m.x = (float)x;
+            //m.y = (float)y;
+            //mols[i] = m;
             
-            Shape circle = new Ellipse2D.Float((float)x, (float)y, (float)m.r, (float)m.r); 
+            Shape circle = new Ellipse2D.Float((float)x, (float)y, (float)2.0, (float)2.0); 
     
             g2d.draw(circle);
             g2d.setPaint(Color.blue);
